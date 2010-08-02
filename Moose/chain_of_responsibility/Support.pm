@@ -62,6 +62,9 @@ sub fail {
 }
 
 
+sub resolve { die "This method is abstract." }
+
+
 sub to_string {
     my $self = shift;
     return "[" . $self->name . "]";
